@@ -1,0 +1,23 @@
+/*
+ 1. After CMake is run, in the build, you can see that this file gets changed and might look like 
+ 
+ #define Tutorial_VERSION_MAJOR 1
+ #define Tutorial_VERSION_MINOR 0
+
+ #define USE_MYMATHFUNCTIONS
+ 
+ 2. This feature is useful when you want to have an include file depending
+    upon what libraries and 3rd party libraries that your project should be
+    configured to built upon
+    
+ 3. These comments will appear as such in the build
+ */
+ 
+// the configured options and settings for Tutorial
+#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+
+#cmakedefine USE_MYMATHFUNCTIONS
+
+
+
